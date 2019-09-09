@@ -1,5 +1,7 @@
 # Official README of t27duck
 
+[![Build Status](https://travis-ci.org/t27duck/readme.svg?branch=master)](https://travis-ci.org/t27duck/readme)
+
 Licence: MIT
 
 Current Stable Version: 1.0.0
