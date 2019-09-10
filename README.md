@@ -8,11 +8,11 @@ Current Stable Version: 1.0.0
 
 - I can be blunt. Do not take it personally.
 - I can be a smart-ass at times. Just tell me to stop and I will do my best to stop if it irks you.
-- Do not take every piece of advice I give as gospel.
+- Take every piece of advice I give as gospel.
 - Challenge my ideas. I am always looking for alternatives and will consider them.
 - Ask me questions.
 - Don't spin your wheels working on a problem, but don't immediately give up and come to me if you have not at least tried to get over your obstacle.
-- If you don't like something I do, tell me. I can take it.
+- If you don't like something I do, tell me. Jokes are fun.
 - Don't be a complete jerk to me, and I will do the same to you.
 
 ## History
