@@ -1,6 +1,6 @@
 # Official README of t27duck
 
-[![Build Status](https://travis-ci.org/t27duck/readme.svg?branch=master)](https://travis-ci.org/t27duck/readme)
+[![Build Status](https://travis-ci.org/t27duck/readme.svg?branch=main)](https://travis-ci.org/t27duck/readme)
 
 Licence: MIT
 
