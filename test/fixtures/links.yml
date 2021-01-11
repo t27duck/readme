@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  link_type: MyString
-  url: MyString
+  link_type: Blog
+  url: google.com
 
 two:
-  link_type: MyString
-  url: MyString
+  link_type: Github
+  url: github.com

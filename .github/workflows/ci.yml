@@ -1,0 +1,25 @@
+name: CI checks
+
+on:
+  # Trigger on any push to the main branch (ie, PR merge)
+  push:
+    branches:
+      - main
+  # Trigger on any push to a PR based off of main
+  pull_request:
+    branches:
+      - 'main'
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+
+  steps:
+    - uses: actions/checkout@v2
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+        bundler-cache: true
+    - run: bundle exec rake

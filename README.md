@@ -1,21 +1,16 @@
-# Official README of t27duck
-
-[![Build Status](https://travis-ci.org/t27duck/readme.svg?branch=main)](https://travis-ci.org/t27duck/readme)
+# Official README (code) of t27duck
 
 Licence: MIT
 
-Current Stable Version: 1.0.0
+Current Stable Version: 2.0.0
 
-- I can be blunt. Do not take it personally.
-- I can be a smart-ass at times. Just tell me to stop and I will do my best to stop if it irks you.
-- Do not take every piece of advice I give as gospel.
-- Challenge my ideas. I am always looking for alternatives and will consider them.
-- Ask me questions.
-- Don't spin your wheels working on a problem, but don't immediately give up and come to me if you have not at least tried to get over your obstacle.
-- If you don't like something I do, tell me. I can take it.
-- Don't be a complete jerk to me, and I will do the same to you.
+Visit http://readme.t27duck.com for information on how to view the data.
 
 ## History
+
+2021-01-12 (2.0.0)
+- Implemented v2 API
+- Retired rendered markdown-only implemenation
 
 2019-09-09 (1.0.0)
 - Initial release
@@ -27,19 +22,3 @@ Current Stable Version: 1.0.0
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-
-<!--
-### Hi there 👋
-**t27duck/t27duck** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->

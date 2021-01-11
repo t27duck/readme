@@ -1,2 +1,43 @@
-<h1>Site#index</h1>
-<p>Find me in app/views/site/index.html.erb</p>
+<h1>T27DUCK'S README</h1>
+<p>Welcome to the documentation page for my README.</p>
+<p>
+  Data may be accessed through the v2 API path using a standard GET request. You may set the appropriate content type
+  header or supply an extension to the end of the path in the URL.
+</p>
+
+<table border="1">
+  <thead>
+    <tr>
+      <td>Suported Content Type</td>
+      <td>Endpoint</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTML</td>
+      <td>
+        <%= link_to api_v2_readme_path, api_v2_readme_path %>
+        <strong>OR</strong>
+        <%= link_to api_v2_readme_path(format: :html), api_v2_readme_path(format: :html) %>
+      </td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td><%= link_to api_v2_readme_path(format: :json), api_v2_readme_path(format: :json) %></td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td><%= link_to api_v2_readme_path(format: :xml), api_v2_readme_path(format: :xml) %></td>
+    </tr>
+    <tr>
+      <td>PDF</td>
+      <td><%= link_to api_v2_readme_path(format: :pdf), api_v2_readme_path(format: :pdf) %></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Source code for this project is available at
+  <a href="https;//github.com/t27duck/readme" target="_blank">https;//github.com/t27duck/readme</a>
+  <em>(Licence: MIT)</em>
+</p>
