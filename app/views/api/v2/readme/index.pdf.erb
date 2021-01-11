@@ -1,0 +1,17 @@
+<h1>T27DUCK'S README</h1>
+
+<p>Information Last Updated: <%= @last_updated.to_s(:long_ordinal) %></p>
+
+<h3>General Information</h3>
+<ul>
+  <% @entries.each do |entry| %>
+    <li><%= entry.content %></li>
+  <% end %>
+</ul>
+
+<h3>Where to Find Me</h3>
+<ul>
+  <% @links.each do |link| %>
+    <li><%= link.link_type %>: <%= link_to link.url, link.url, target: '_blank' %></li>
+  <% end %>
+</ul>
