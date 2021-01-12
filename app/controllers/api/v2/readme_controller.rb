@@ -2,7 +2,7 @@ class Api::V2::ReadmeController < ApplicationController
   def index
     @entries = Entry.order(:id)
     @links = Link.order(:link_type)
-    @last_updated = (@entries.maximum(:updated_at)&.to_date || Date.now)
+    @last_updated = (@entries.maximum(:updated_at)&.to_date || Time.now.to_date)
 
     respond_to do |format|
       format.json do
