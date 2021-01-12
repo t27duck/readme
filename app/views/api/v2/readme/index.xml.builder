@@ -1,6 +1,10 @@
 xml.instruct!
 xml.readme do
-  xml.lastUpdated @last_updated.to_s(:long_ordinal)
+  xml.meta do
+    xml.lastUpdated @last_updated.to_s(:long_ordinal)
+    xml.source @source
+    xml.homepage @homepage
+  end
   xml.quickInfo do
     @entries.each do |entry|
       xml.entry entry.content
@@ -9,11 +13,9 @@ xml.readme do
   xml.detailedInfo do
     @user_manual_headings.each do |user_manual_heading|
       xml.info do
-        xml.heading user_manual_heading.content
-        xml.entries do
-          user_manual_heading.user_manual_entries.each do |entry|
-            xml.entry entry.content
-          end
+      xml.heading user_manual_heading.content
+        user_manual_heading.user_manual_entries.each do |entry|
+          xml.entry entry.content
         end
       end
     end

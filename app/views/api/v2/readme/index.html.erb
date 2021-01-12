@@ -1,6 +1,6 @@
 <h1>T27DUCK'S README</h1>
 
-<p>Information Last Updated: <%= @last_updated.to_s(:long_ordinal) %></p>
+<hr />
 
 <h3>Quick Info (TLDR)</h3>
 <ul>
@@ -8,6 +8,8 @@
     <li><%= entry.content %></li>
   <% end %>
 </ul>
+
+<hr />
 
 <% @user_manual_headings.each do |user_manual_heading| %>
   <h3><%= user_manual_heading.content %></h3>
@@ -18,9 +20,20 @@
   </ul>
 <% end %>
 
+<hr />
+
 <h3>Where to Find Me Online</h3>
 <ul>
   <% @links.each do |link| %>
     <li><%= link.link_type %>: <%= link_to link.url, link.url, target: '_blank' %></li>
   <% end %>
+</ul>
+
+<hr />
+
+<h3>Meta</h3>
+<ul>
+  <li>Information Last Updated: <%= @last_updated.to_s(:long_ordinal) %></li>
+  <li>Source Code: <%= link_to @source, @source, target: '_blank' %></li>
+  <li>Homepage: <%= link_to @homepage, @homepage, target: '_blank' %></li>
 </ul>
