@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_11_205502) do
+ActiveRecord::Schema.define(version: 2021_01_12_020618) do
 
   create_table "entries", force: :cascade do |t|
     t.text "content", null: false
@@ -21,6 +21,20 @@ ActiveRecord::Schema.define(version: 2021_01_11_205502) do
   create_table "links", force: :cascade do |t|
     t.string "link_type", null: false
     t.string "url", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "user_manual_entries", force: :cascade do |t|
+    t.bigint "user_manual_heading_id", null: false
+    t.text "content", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_manual_heading_id"], name: "index_user_manual_entries_on_user_manual_heading_id"
+  end
+
+  create_table "user_manual_headings", force: :cascade do |t|
+    t.text "content", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

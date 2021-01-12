@@ -2,14 +2,23 @@
 
 <p>Information Last Updated: <%= @last_updated.to_s(:long_ordinal) %></p>
 
-<h3>General Information</h3>
+<h3>Quick Info (TLDR)</h3>
 <ul>
   <% @entries.each do |entry| %>
     <li><%= entry.content %></li>
   <% end %>
 </ul>
 
-<h3>Where to Find Me</h3>
+<% @user_manual_headings.each do |user_manual_heading| %>
+  <h3><%= user_manual_heading.content %></h3>
+  <ul>
+    <% user_manual_heading.user_manual_entries.each do |entry| %>
+      <li><%= entry.content %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<h3>Where to Find Me Online</h3>
 <ul>
   <% @links.each do |link| %>
     <li><%= link.link_type %>: <%= link_to link.url, link.url, target: '_blank' %></li>

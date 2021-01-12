@@ -1,9 +1,21 @@
 xml.instruct!
 xml.readme do
   xml.lastUpdated @last_updated.to_s(:long_ordinal)
-  xml.information do
+  xml.summary do
     @entries.each do |entry|
       xml.entry entry.content
+    end
+  end
+  xml.detailedInformation do
+    @user_manual_headings.each do |user_manual_heading|
+      xml.info do
+        xml.heading user_manual_heading.content
+        xml.entries do
+          user_manual_heading.user_manual_entries.each do |entry|
+            xml.entry entry.content
+          end
+        end
+      end
     end
   end
   xml.links do

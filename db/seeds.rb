@@ -26,3 +26,6 @@ Link.create!(link_type: "Personal Site/Blog", url: "https://t27duck.com")
 Link.create!(link_type: "GitHub", url: "https://gihub.com/t27duck")
 Link.create!(link_type: "LinkedIn", url: "https://linkedin.com/in/t27duck")
 Link.create!(link_type: "Twitter", url: "https://twitter.com/t27duck")
+
+# heading = UserManualHeading.create!(content: '')
+# UserManualEntry.create!(user_manual_heading: heading, content: '')
