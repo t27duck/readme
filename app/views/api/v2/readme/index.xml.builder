@@ -1,12 +1,12 @@
 xml.instruct!
 xml.readme do
   xml.lastUpdated @last_updated.to_s(:long_ordinal)
-  xml.summary do
+  xml.quickInfo do
     @entries.each do |entry|
       xml.entry entry.content
     end
   end
-  xml.detailedInformation do
+  xml.detailedInfo do
     @user_manual_headings.each do |user_manual_heading|
       xml.info do
         xml.heading user_manual_heading.content
