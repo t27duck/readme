@@ -23,7 +23,7 @@ Entry.create!(content: "If you shove a large project in front of me all at once,
 Entry.create!(content: "My grandfather always told me, \"Don't start something you can't finish.\" I take that mindset to heart.")
 
 Link.create!(link_type: "Personal Site/Blog", url: "https://t27duck.com")
-Link.create!(link_type: "GitHub", url: "https://gihub.com/t27duck")
+Link.create!(link_type: "GitHub", url: "https://github.com/t27duck")
 Link.create!(link_type: "LinkedIn", url: "https://linkedin.com/in/t27duck")
 Link.create!(link_type: "Twitter", url: "https://twitter.com/t27duck")
 
