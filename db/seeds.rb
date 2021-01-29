@@ -55,7 +55,7 @@ heading = UserManualHeading.create!(content: "What are some things that people m
 UserManualEntry.create!(user_manual_heading: heading, content: "I don't make eye contact often, especially over video conferencing (usually because I have the conference window on a different monitor than the one with the camera). I am paying attention.")
 UserManualEntry.create!(user_manual_heading: heading, content: "I don't look down when I walk often because I'm \"sad.\" I do that because I trip over my own two feet and am on the lookout for small raises in the sidewalk.")
 
-heading = UserManualHeading.create!(content: "What’s the best way to communicate with you?")
+heading = UserManualHeading.create!(content: "What's the best way to communicate with you?")
 UserManualEntry.create!(user_manual_heading: heading, content: "I typically have [company approved messaging system] on my phone and work laptop set to alert me on a DM or a ping. That would be the quickest way to get my attention.")
 UserManualEntry.create!(user_manual_heading: heading, content: "Email and video conferencing is fine too, though the former may result in a delayed response.")
 
