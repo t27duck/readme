@@ -1,7 +1,7 @@
 xml.instruct!
 xml.readme do
   xml.meta do
-    xml.lastUpdated @last_updated.to_s(:long_ordinal)
+    xml.lastUpdated @last_updated.to_formatted_s(:long_ordinal)
     xml.source @source
     xml.homepage @homepage
   end

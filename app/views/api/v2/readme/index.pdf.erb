@@ -33,7 +33,7 @@
 
 <h3>Meta</h3>
 <ul>
-  <li>Information Last Updated: <%= @last_updated.to_s(:long_ordinal) %></li>
+  <li>Information Last Updated: <%= @last_updated.to_formatted_s(:long_ordinal) %></li>
   <li>Source Code: <%= link_to @source, @source, target: '_blank' %></li>
   <li>Homepage: <%= link_to @homepage, @homepage, target: '_blank' %></li>
 </ul>
