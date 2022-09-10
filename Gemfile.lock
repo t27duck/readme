@@ -144,7 +144,8 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    sqlite3 (1.4.4)
+    sqlite3 (1.5.0)
+      mini_portile2 (~> 2.8.0)
     strscan (3.0.4)
     thor (1.2.1)
     timeout (0.3.0)
@@ -166,7 +167,7 @@ DEPENDENCIES
   listen (~> 3.7)
   puma (~> 5.6)
   rails (~> 7.0.4)
-  sqlite3 (~> 1.4)
+  sqlite3 (~> 1.5)
   tzinfo-data
   wicked_pdf
   wkhtmltopdf-binary
