@@ -88,7 +88,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
+    mini_portile2 (2.8.1)
     minitest (5.16.3)
     net-imap (0.2.3)
       digest
@@ -144,7 +144,7 @@ GEM
     rb-fsevent (0.11.1)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    sqlite3 (1.5.4)
+    sqlite3 (1.6.0)
       mini_portile2 (~> 2.8.0)
     strscan (3.0.4)
     thor (1.2.1)
@@ -167,7 +167,7 @@ DEPENDENCIES
   listen (~> 3.7)
   puma (~> 6.0)
   rails (~> 7.0.4)
-  sqlite3 (~> 1.5)
+  sqlite3 (~> 1.6)
   tzinfo-data
   wicked_pdf
   wkhtmltopdf-binary
