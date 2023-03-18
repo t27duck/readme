@@ -17,6 +17,6 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.7
+        ruby-version: 3.2
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - run: bundle exec rails test
