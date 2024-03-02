@@ -22,7 +22,7 @@ class Api::V2::ReadmeController < ApplicationController
           }
         }
       end
-      format.pdf { render pdf: "readme" }
+      format.pdf { }
       format.xml { }
       format.html { }
     end
