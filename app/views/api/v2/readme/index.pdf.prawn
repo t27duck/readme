@@ -16,9 +16,11 @@ prawn_document do |pdf|
 
   @user_manual_headings.each do |user_manual_heading|
     pdf.text user_manual_heading.content
+    pdf.move_down 10
     user_manual_heading.user_manual_entries.each do |entry|
       pdf.text "- #{entry.content}"
     end
+    pdf.move_down 5
   end
 
   pdf.move_down 20
