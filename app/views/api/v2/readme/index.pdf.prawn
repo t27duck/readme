@@ -7,6 +7,7 @@ prawn_document do |pdf|
   pdf.text "Quick Info (TLDR)"
   pdf.move_down 10
   @entries.each do |entry|
+    pdf.move_down 5
     pdf.text entry.content
   end
 
@@ -19,6 +20,7 @@ prawn_document do |pdf|
     pdf.move_down 10
     user_manual_heading.user_manual_entries.each do |entry|
       pdf.text "- #{entry.content}"
+      pdf.move_down 5
     end
     pdf.move_down 5
   end
