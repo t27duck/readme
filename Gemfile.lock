@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 284baa18c2c62abec170b61e285aefbd9604f675
+  revision: c05608b90120251bf9d8e8d3ed2a752a474f19b8
   specs:
     actioncable (7.2.0.alpha)
       actionpack (= 7.2.0.alpha)
@@ -97,19 +97,18 @@ GEM
   remote: https://rubygems.org/
   specs:
     base64 (0.2.0)
-    bigdecimal (3.1.6)
+    bigdecimal (3.1.7)
     builder (3.2.4)
     byebug (11.1.3)
     concurrent-ruby (1.2.3)
     connection_pool (2.4.1)
     crass (1.0.6)
     date (3.3.4)
-    drb (2.2.0)
-      ruby2_keywords
+    drb (2.2.1)
     erubi (1.12.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    i18n (1.14.1)
+    i18n (1.14.4)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
     irb (1.12.0)
@@ -137,11 +136,11 @@ GEM
       timeout
     net-smtp (0.5.0)
       net-protocol
-    nio4r (2.7.0)
-    nokogiri (1.16.2)
+    nio4r (2.7.1)
+    nokogiri (1.16.4)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.16.2-x86_64-linux)
+    nokogiri (1.16.4-x86_64-linux)
       racc (~> 1.4)
     pdf-core (0.9.0)
     prawn (2.4.0)
@@ -178,7 +177,6 @@ GEM
       psych (>= 4.0.0)
     reline (0.5.2)
       io-console (~> 0.5)
-    ruby2_keywords (0.0.5)
     sqlite3 (2.0.0)
       mini_portile2 (~> 2.8.0)
     sqlite3 (2.0.0-x86_64-linux-gnu)
