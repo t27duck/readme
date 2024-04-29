@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 0a9e39d14e960c8db447e21aa02f685b74da1839
+  revision: cc7f0b0d4cabc4807a271a6dfa22150943c80412
   specs:
     actioncable (7.2.0.alpha)
       actionpack (= 7.2.0.alpha)
@@ -175,7 +175,7 @@ GEM
     rake (13.2.1)
     rdoc (6.6.3.1)
       psych (>= 4.0.0)
-    reline (0.5.3)
+    reline (0.5.4)
       io-console (~> 0.5)
     sqlite3 (2.0.1)
       mini_portile2 (~> 2.8.0)
