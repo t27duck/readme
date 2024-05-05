@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateUserManualEntries < ActiveRecord::Migration[6.1]
   def change
     create_table :user_manual_entries do |t|
