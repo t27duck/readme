@@ -43,7 +43,7 @@ UserManualEntry.create!(user_manual_heading: heading,
 content: "Fake people/people act differently while around others.")
 UserManualEntry.create!(user_manual_heading: heading, content: "Pointless meetings.")
 UserManualEntry.create!(user_manual_heading: heading,
-content: "People who dislike the Brady/Belichick Patriots. They're good. They're winners. Deal with it. (⌐■_■)")
+content: "People who dislike the Brady/Belichick Patriots. They're good. They're winners. Deal with it.")
 
 heading = UserManualHeading.create!(content: "What are your quirks?")
 UserManualEntry.create!(user_manual_heading: heading,

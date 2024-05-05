@@ -2,8 +2,8 @@
 
 one:
   user_manual_heading: one
-  content: MyText
+  content: ManualEntry1
 
 two:
   user_manual_heading: two
-  content: MyText
+  content: ManualEntry2
