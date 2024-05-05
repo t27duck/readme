@@ -38,7 +38,5 @@ module T27duck
 
     # Don't generate system test files.
     config.generators.system_tests = nil
-
-    config.active_record.sqlite3_production_warning = false
   end
 end
