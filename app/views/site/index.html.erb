@@ -34,8 +34,19 @@
   </tbody>
 </table>
 
-<p>
+<br />
+<div>
   Source code for this project is available at
   <a href="https://github.com/t27duck/readme" target="_blank">https://github.com/t27duck/readme</a>
   <em>(Licence: MIT)</em>
-</p>
+  <br />
+  <% if user_signed_in? %>
+    <br />
+    Manage: <%= link_to "Short entries", entries_path %> |
+    <%= link_to "Detail entries", user_manual_headings_path %> |
+    <%= link_to "Links", links_path %> |
+    <%= button_to "Sign out", session_path, method: :delete, form: { style: "display: inline;" } %>
+  <% else %>
+    <%= link_to "Manage", new_session_path %>
+  <% end %>
+</div>

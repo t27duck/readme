@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "User manual headings" %>
+
+<h1>User manual headings</h1>
+
+<p>
+  <%= link_to "Back home", root_path %>
+</p>
+
+<div id="user_manual_headings">
+  <% @user_manual_headings.each do |user_manual_heading| %>
+    <%= render user_manual_heading %>
+    <p>
+      <%= link_to "Show this user manual heading", user_manual_heading %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New user manual heading", new_user_manual_heading_path %>

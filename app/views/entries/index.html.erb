@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Entries" %>
+
+<h1>Entries</h1>
+
+<p>
+  <%= link_to "Back home", root_path %>
+</p>
+
+<div id="entries">
+  <% @entries.each do |entry| %>
+    <%= render entry %>
+    <p>
+      <%= link_to "Show this entry", entry %> |
+      <%= link_to "Edit this entry", edit_entry_path(entry) %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New entry", new_entry_path %>

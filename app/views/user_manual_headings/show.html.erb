@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @user_manual_heading %>
+
+<div>
+  <%= link_to "Edit this user manual heading", edit_user_manual_heading_path(@user_manual_heading) %> |
+  <%= link_to "Back to user manual headings", user_manual_headings_path %>
+  <br /><br />
+  <%= button_to "Destroy this user manual heading", @user_manual_heading, method: :delete %>
+</div>
+
+<p>
+  <strong>Heading Entries</strong>
+</p>
+
+<div>
+  <% @user_manual_heading.user_manual_entries.each do |user_manual_entry| %>
+    <p>
+    <strong>Content:</strong>
+    <%= user_manual_entry.content %>
+    <br />
+    <%= link_to "Edit this user manual entry", edit_user_manual_heading_user_manual_entry_path(@user_manual_heading, user_manual_entry) %>
+  </p>
+  <% end %>
+</div>
+
+<div>
+  <%= link_to "New user manual entry", new_user_manual_heading_user_manual_entry_path(@user_manual_heading) %>
+</div>

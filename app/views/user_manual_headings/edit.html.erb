@@ -1,0 +1,12 @@
+<% content_for :title, "Editing user manual heading" %>
+
+<h1>Editing user manual heading</h1>
+
+<%= render "form", user_manual_heading: @user_manual_heading %>
+
+<br>
+
+<div>
+  <%= link_to "Show this user manual heading", @user_manual_heading %> |
+  <%= link_to "Back to user manual headings", user_manual_headings_path %>
+</div>

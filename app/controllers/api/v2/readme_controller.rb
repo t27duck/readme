@@ -19,7 +19,7 @@ class Api::V2::ReadmeController < ApplicationController
           readme: {
             quickInfo: @entries.pluck(:content),
             detailedInfo: @user_manual_headings.map { |heading|
- { heading: heading, entries: heading.user_manual_entries.map(&:content) } },
+            { heading: heading, entries: heading.user_manual_entries.map(&:content) } },
             links: @links.map { |l| { type: l.link_type, url: l.url } },
             meta: { lastUpdated: @last_updated, source: @source, homepage: @homepage }
           }
