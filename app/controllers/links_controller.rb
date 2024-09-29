@@ -2,7 +2,7 @@
 
 class LinksController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_link, only: %i[ show edit update destroy ]
+  before_action :set_link, only: [:show, :edit, :update, :destroy]
 
   def index
     @links = Link.all
@@ -48,6 +48,6 @@ class LinksController < ApplicationController
   end
 
   def link_params
-    params.expect(link: [ :link_type, :url ])
+    params.expect(link: [:link_type, :url])
   end
 end

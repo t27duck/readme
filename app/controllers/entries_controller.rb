@@ -2,7 +2,7 @@
 
 class EntriesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_entry, only: %i[ show edit update destroy ]
+  before_action :set_entry, only: [:show, :edit, :update, :destroy]
 
   def index
     @entries = Entry.all
@@ -48,6 +48,6 @@ class EntriesController < ApplicationController
   end
 
   def entry_params
-    params.expect(entry: [ :content ])
+    params.expect(entry: [:content])
   end
 end

@@ -1,16 +1,93 @@
-inherit_gem:
-  rubocop-rails-omakase: rubocop.yml
+require:
+  - rubocop-capybara
+  - rubocop-minitest
+  - rubocop-performance
+  - rubocop-rails
+
+Rails:
+  Enabled: true
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - development
+    - test
 
 AllCops:
   TargetRubyVersion: 3.3
-
-Layout/SpaceInsideArrayLiteralBrackets:
-  Enabled: false
-
-Style/FrozenStringLiteralComment:
-  Enabled: true
+  # Auto-enable all new pending cops between releases
+  NewCops: enable
+  # Mostly disabling the majority of the Rails-generated configuration files
+  # We should try to at least manually maintain the frozen string litteral
+  # magic comment rule, if possible
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'db/**/*'
+    - 'bin/**/*'
+    - 'app/javascript/**/*'
+    - 'tmp/**/*'
 
 Layout/LineLength:
-  Max: 120
   Exclude:
-    - db/seeds.rb
+    - 'app/helpers/**/*'
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/BlockLength:
+  Max: 30
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Minitest/MultipleAssertions:
+  Enabled: false
+
+Rails/FindEach:
+  Exclude:
+    - 'test/**/*'
+
+Rails/HelperInstanceVariable:
+  Enabled: false
+
+Rails/LexicallyScopedActionFilter:
+  Exclude:
+    - 'app/controllers/registrations_controller.rb'
+    - 'app/controllers/sessions_controller.rb'
+
+Rails/I18nLocaleTexts:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/GlobalStdStream:
+  Enabled: false
+
+Style/HashSyntax:
+  Enabled: false
+
+Style/OpenStructUse:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/SymbolArray:
+  EnforcedStyle: brackets
+
+Style/WordArray:
+  EnforcedStyle: brackets

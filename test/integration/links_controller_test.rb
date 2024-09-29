@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class LinksControllerTest < ActionDispatch::IntegrationTest
@@ -8,11 +10,13 @@ class LinksControllerTest < ActionDispatch::IntegrationTest
 
   test "should get index" do
     get links_url
+
     assert_response :success
   end
 
   test "should get new" do
     get new_link_url
+
     assert_response :success
   end
 
@@ -26,16 +30,19 @@ class LinksControllerTest < ActionDispatch::IntegrationTest
 
   test "should show link" do
     get link_url(@link)
+
     assert_response :success
   end
 
   test "should get edit" do
     get edit_link_url(@link)
+
     assert_response :success
   end
 
   test "should update link" do
     patch link_url(@link), params: { link: { link_type: @link.link_type, url: @link.url } }
+
     assert_redirected_to link_url(@link)
   end
 

@@ -3,7 +3,7 @@
 xml.instruct!
 xml.readme do
   xml.meta do
-    xml.lastUpdated @last_updated.to_formatted_s(:long_ordinal)
+    xml.lastUpdated @last_updated.to_fs(:long_ordinal)
     xml.source @source
     xml.homepage @homepage
   end
@@ -15,7 +15,7 @@ xml.readme do
   xml.detailedInfo do
     @user_manual_headings.each do |user_manual_heading|
       xml.info do
-      xml.heading user_manual_heading.content
+        xml.heading user_manual_heading.content
         user_manual_heading.user_manual_entries.each do |entry|
           xml.entry entry.content
         end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "test_helper"
 
 class UserManualEntriesControllerTest < ActionDispatch::IntegrationTest
@@ -7,17 +9,16 @@ class UserManualEntriesControllerTest < ActionDispatch::IntegrationTest
     login_user
   end
 
-
   test "should get new" do
     get new_user_manual_heading_user_manual_entry_url(@user_manual_heading)
+
     assert_response :success
   end
 
   test "should create user_manual_entry" do
     assert_difference("UserManualEntry.count") do
       post user_manual_heading_user_manual_entries_url(@user_manual_heading),
-        params: { user_manual_entry: { content: @user_manual_entry.content }
-      }
+           params: { user_manual_entry: { content: @user_manual_entry.content } }
     end
 
     assert_redirected_to user_manual_heading_user_manual_entry_url(@user_manual_heading, UserManualEntry.last)
@@ -25,18 +26,20 @@ class UserManualEntriesControllerTest < ActionDispatch::IntegrationTest
 
   test "should show user_manual_entry" do
     get user_manual_heading_user_manual_entry_url(@user_manual_heading, @user_manual_entry)
+
     assert_response :success
   end
 
   test "should get edit" do
     get edit_user_manual_heading_user_manual_entry_url(@user_manual_heading, @user_manual_entry)
+
     assert_response :success
   end
 
   test "should update user_manual_entry" do
     patch user_manual_heading_user_manual_entry_url(@user_manual_heading, @user_manual_entry),
-      params: { user_manual_entry: { content: @user_manual_heading.content }
-    }
+          params: { user_manual_entry: { content: @user_manual_heading.content } }
+
     assert_redirected_to user_manual_heading_user_manual_entry_url(@user_manual_heading, @user_manual_entry)
   end
 

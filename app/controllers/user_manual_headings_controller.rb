@@ -2,7 +2,7 @@
 
 class UserManualHeadingsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_user_manual_heading, only: %i[ show edit update destroy ]
+  before_action :set_user_manual_heading, only: [:show, :edit, :update, :destroy]
 
   def index
     @user_manual_headings = UserManualHeading.all
@@ -48,6 +48,6 @@ class UserManualHeadingsController < ApplicationController
   end
 
   def user_manual_heading_params
-    params.expect(user_manual_heading: [ :content ])
+    params.expect(user_manual_heading: [:content])
   end
 end

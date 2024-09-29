@@ -56,10 +56,10 @@ group :development, :test do
   gem "debug", platforms: [:mri, :mingw, :x64_mingw]
 
   # Ruby code linter
-  gem "rubocop-minitest"
-  gem "rubocop-performance"
-  gem "rubocop-rails"
-  gem "rubocop-rails-omakase"
+  gem "rubocop-capybara", require: false
+  gem "rubocop-minitest", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
@@ -82,5 +82,5 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "prawn-rails" # PDF generation
 gem "matrix" # Required for prawn
+gem "prawn-rails" # PDF generation

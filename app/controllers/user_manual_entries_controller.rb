@@ -3,7 +3,7 @@
 class UserManualEntriesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_user_manual_heading
-  before_action :set_user_manual_entry, only: %i[ show edit update destroy ]
+  before_action :set_user_manual_entry, only: [:show, :edit, :update, :destroy]
 
   def show
   end
@@ -28,8 +28,8 @@ class UserManualEntriesController < ApplicationController
   def update
     if @user_manual_entry.update(user_manual_entry_params)
       redirect_to [@user_manual_heading, @user_manual_entry],
-        notice: "User manual entry was successfully updated.",
-        status: :see_other
+                  notice: "User manual entry was successfully updated.",
+                  status: :see_other
     else
       render :edit, status: :unprocessable_entity
     end
@@ -38,8 +38,8 @@ class UserManualEntriesController < ApplicationController
   def destroy
     @user_manual_entry.destroy!
     redirect_to user_manual_heading_path(@user_manual_heading),
-      notice: "User manual entry was successfully destroyed.",
-      status: :see_other
+                notice: "User manual entry was successfully destroyed.",
+                status: :see_other
   end
 
   private
@@ -53,6 +53,6 @@ class UserManualEntriesController < ApplicationController
   end
 
   def user_manual_entry_params
-    params.expect(user_manual_entry: [ :content ])
+    params.expect(user_manual_entry: [:content])
   end
 end
