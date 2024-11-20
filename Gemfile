@@ -10,7 +10,7 @@ gem "rails", "~> 8.0.0"
 # gem "propshaft"
 
 # Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 2.2"
+gem "sqlite3", "~> 2.3"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 6.4"
