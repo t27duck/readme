@@ -18,7 +18,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
   test "create should not login if password is wrong" do
     post session_url, params: { password: "xxx" }
 
-    assert_response :unprocessable_entity
+    assert_response :unprocessable_content
   end
 
   test "destroy logs user out" do

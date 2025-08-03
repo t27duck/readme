@@ -24,7 +24,7 @@ class LinksController < ApplicationController
     if @link.save
       redirect_to @link, notice: "Link was successfully created."
     else
-      render :new, status: :unprocessable_entity
+      render :new, status: :unprocessable_content
     end
   end
 
@@ -32,7 +32,7 @@ class LinksController < ApplicationController
     if @link.update(link_params)
       redirect_to @link, notice: "Link was successfully updated.", status: :see_other
     else
-      render :edit, status: :unprocessable_entity
+      render :edit, status: :unprocessable_content
     end
   end
 

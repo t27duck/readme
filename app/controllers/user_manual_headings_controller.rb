@@ -24,7 +24,7 @@ class UserManualHeadingsController < ApplicationController
     if @user_manual_heading.save
       redirect_to @user_manual_heading, notice: "User manual heading was successfully created."
     else
-      render :new, status: :unprocessable_entity
+      render :new, status: :unprocessable_content
     end
   end
 
@@ -32,7 +32,7 @@ class UserManualHeadingsController < ApplicationController
     if @user_manual_heading.update(user_manual_heading_params)
       redirect_to @user_manual_heading, notice: "User manual heading was successfully updated.", status: :see_other
     else
-      render :edit, status: :unprocessable_entity
+      render :edit, status: :unprocessable_content
     end
   end
 

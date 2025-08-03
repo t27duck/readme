@@ -21,7 +21,7 @@ class UserManualEntriesController < ApplicationController
     if @user_manual_entry.save
       redirect_to [@user_manual_heading, @user_manual_entry], notice: "User manual entry was successfully created."
     else
-      render :new, status: :unprocessable_entity
+      render :new, status: :unprocessable_content
     end
   end
 
@@ -31,7 +31,7 @@ class UserManualEntriesController < ApplicationController
                   notice: "User manual entry was successfully updated.",
                   status: :see_other
     else
-      render :edit, status: :unprocessable_entity
+      render :edit, status: :unprocessable_content
     end
   end
 

@@ -24,7 +24,7 @@ class EntriesController < ApplicationController
     if @entry.save
       redirect_to @entry, notice: "Entry was successfully created."
     else
-      render :new, status: :unprocessable_entity
+      render :new, status: :unprocessable_content
     end
   end
 
@@ -32,7 +32,7 @@ class EntriesController < ApplicationController
     if @entry.update(entry_params)
       redirect_to @entry, notice: "Entry was successfully updated.", status: :see_other
     else
-      render :edit, status: :unprocessable_entity
+      render :edit, status: :unprocessable_content
     end
   end
 
