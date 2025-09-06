@@ -1,7 +1,5 @@
-require:
-  - rubocop-capybara
-
 plugins:
+  - rubocop-capybara
   - rubocop-minitest
   - rubocop-performance
   - rubocop-rails

@@ -4,7 +4,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 8.0.2"
+gem "rails", "~> 8.1.0.beta1"
 
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 # gem "propshaft"
@@ -66,6 +66,9 @@ group :development, :test do
   gem "rubocop-minitest", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
+
+  # Audits gems for known security defects (use config/bundler-audit.yml to ignore issues)
+  gem "bundler-audit", require: false
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
