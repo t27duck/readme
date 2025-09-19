@@ -286,9 +286,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
-    sqlite3 (2.7.3-aarch64-linux-gnu)
-    sqlite3 (2.7.3-arm64-darwin)
-    sqlite3 (2.7.3-x86_64-linux-gnu)
+    sqlite3 (2.7.4-aarch64-linux-gnu)
+    sqlite3 (2.7.4-arm64-darwin)
+    sqlite3 (2.7.4-x86_64-linux-gnu)
     sshkit (1.24.0)
       base64
       logger
@@ -454,9 +454,9 @@ CHECKSUMS
   rubyzip (3.0.1) sha256=8bbbf32ff93db9a156ce2626820e748e2913352e6df80d764d0eea1ed1f5b8a7
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   selenium-webdriver (4.35.0) sha256=6fc920cec4b9e6263afeb4941289d8deb0853acbc49e0d6f7de91c86986d359b
-  sqlite3 (2.7.3-aarch64-linux-gnu) sha256=00bab7e2ceb7e911b0a2c516bcb9ec0aa7ee57b9b231419e1788515319ac4317
-  sqlite3 (2.7.3-arm64-darwin) sha256=133772f4312a9d0fa0c16aab7c2abdda2ee93f47dded0f353a2981f7b9d2b9b4
-  sqlite3 (2.7.3-x86_64-linux-gnu) sha256=11b2612fddf56602d238be7a984fa0633e591edd034f7520747bc0927b7fa865
+  sqlite3 (2.7.4-aarch64-linux-gnu) sha256=071da898ef968c83f62b26ed644a4e7f3544034fb2518f99f88a354d9ab6381c
+  sqlite3 (2.7.4-arm64-darwin) sha256=d5b09cd4e9542aa05f0db0eb7dd868102cc23072ae378e0453e59e0efaed89b8
+  sqlite3 (2.7.4-x86_64-linux-gnu) sha256=0755b458f5501e89c0d5a0003afc4fdd6fd059eb1fb1424221532917096da4be
   sshkit (1.24.0) sha256=9597c1f984778ae9742f2dc839778d57a6a2efb868107046575c52ac7c628e6c
   stringio (3.1.7) sha256=5b78b7cb242a315fb4fca61a8255d62ec438f58da2b90be66048546ade4507fa
   thor (1.4.0) sha256=8763e822ccb0f1d7bee88cde131b19a65606657b847cc7b7b4b82e772bcd8a3d
