@@ -298,9 +298,9 @@ GEM
       ostruct
     stringio (3.1.7)
     thor (1.4.0)
-    thruster (0.1.15-aarch64-linux)
-    thruster (0.1.15-arm64-darwin)
-    thruster (0.1.15-x86_64-linux)
+    thruster (0.1.16-aarch64-linux)
+    thruster (0.1.16-arm64-darwin)
+    thruster (0.1.16-x86_64-linux)
     timeout (0.4.3)
     tsort (0.2.0)
     ttfunk (1.8.0)
@@ -459,9 +459,9 @@ CHECKSUMS
   sshkit (1.24.0) sha256=9597c1f984778ae9742f2dc839778d57a6a2efb868107046575c52ac7c628e6c
   stringio (3.1.7) sha256=5b78b7cb242a315fb4fca61a8255d62ec438f58da2b90be66048546ade4507fa
   thor (1.4.0) sha256=8763e822ccb0f1d7bee88cde131b19a65606657b847cc7b7b4b82e772bcd8a3d
-  thruster (0.1.15-aarch64-linux) sha256=bd55cf486e14ce0484c86a10b04a470da0463efc0dea2f495e49c0ac40d085df
-  thruster (0.1.15-arm64-darwin) sha256=d340f3b361054123646912dd1833c8929732e1194d8f4d0305dcfb0e0017b289
-  thruster (0.1.15-x86_64-linux) sha256=a979a3e493c111940723c08c3b7b3b6f95c5d44af26fe65b6edae1f96fc0deda
+  thruster (0.1.16-aarch64-linux) sha256=bc825f113ba4ba45a77b7f493cc067d7a6164955faee4300ef8fb7a9476fea5c
+  thruster (0.1.16-arm64-darwin) sha256=b7047cf7d19f7c43cdb99159f5f611cefcff70c0082e424b5bc01f91ade1e2f5
+  thruster (0.1.16-x86_64-linux) sha256=775762f0e96ce5e300b60fdedb7a73c89d2fbaef6e9cf730f32008f6fd67396d
   timeout (0.4.3) sha256=9509f079b2b55fe4236d79633bd75e34c1c1e7e3fb4b56cb5fda61f80a0fe30e
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   ttfunk (1.8.0) sha256=a7cbc7e489cc46e979dde04d34b5b9e4f5c8f1ee5fc6b1a7be39b829919d20ca
