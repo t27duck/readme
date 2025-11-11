@@ -5,7 +5,7 @@
 <div>
   <%= link_to "Edit this user manual heading", edit_user_manual_heading_path(@user_manual_heading) %> |
   <%= link_to "Back to user manual headings", user_manual_headings_path %>
-  <br /><br />
+  <br><br>
   <%= button_to "Destroy this user manual heading", @user_manual_heading, method: :delete %>
 </div>
 
@@ -18,7 +18,7 @@
     <p>
     <strong>Content:</strong>
     <%= user_manual_entry.content %>
-    <br />
+    <br>
     <%= link_to "Edit this user manual entry", edit_user_manual_heading_user_manual_entry_path(@user_manual_heading, user_manual_entry) %>
   </p>
   <% end %>
