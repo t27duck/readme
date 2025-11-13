@@ -24,7 +24,7 @@ jobs:
 
       - name: Scan for known security vulnerabilities in gems used
         run: bin/bundler-audit
-  lint:
+  lint_ruby:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -38,6 +38,14 @@ jobs:
 
       - name: Lint code for consistent style
         run: bin/rubocop -f github
+  lint_erb:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Lint erb for consistent style
+        run: npx --yes @herb-tools/linter
 
   test:
     runs-on: ubuntu-latest
