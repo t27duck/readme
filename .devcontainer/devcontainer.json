@@ -15,10 +15,7 @@
   "containerEnv": {
     "CAPYBARA_SERVER_PORT": "45678",
     "SELENIUM_HOST": "selenium",
-    "IRB_USE_AUTOCOMPLETE": "false",
-    "BUNDLE_SIMULATE_VERSION": "4",
-    "BUNDLE_CLEAN": "false",
-    "BUNDLE_PATH__SYSTEM": "true"
+    "IRB_USE_AUTOCOMPLETE": "false"
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
