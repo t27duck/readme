@@ -14,7 +14,7 @@ Rails/UnknownEnv:
     - test
 
 AllCops:
-  TargetRubyVersion: 3.3
+  TargetRubyVersion: 4.0
   # Auto-enable all new pending cops between releases
   NewCops: enable
   # Mostly disabling the majority of the Rails-generated configuration files
