@@ -20,8 +20,11 @@ servers:
 #
 # Note: If using Cloudflare, set encryption mode in SSL/TLS setting to "Full" to enable CF-to-app encryption.
 proxy:
-  ssl: true
+  ssl: <%= ENV["PROXY_SSL"] == "true" %>
   host: <%= ENV["PROXY_HOST"] %>
+  run:
+    http_port: <%= ENV["PROXY_HTTP_PORT"] %>
+    https_port: <%= ENV["PROXY_HTTPS_PORT"] %>
   # Proxy connects to your container on port 80 by default.
   # app_port: 3000
 
@@ -58,8 +61,8 @@ env:
 
 # Use a different ssh user than root
 #
-# ssh:
-#   user: app
+ssh:
+  user: <%= ENV["SSH_USERNAME"] %>
 
 # Use a persistent storage volume.
 #
