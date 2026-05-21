@@ -336,7 +336,7 @@ PLATFORMS
 
 DEPENDENCIES
   bcrypt (~> 3.1.22)
-  bootsnap
+  bootsnap (>= 1.24.1)
   brakeman
   bundler-audit
   capybara
