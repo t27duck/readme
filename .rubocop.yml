@@ -15,6 +15,8 @@ Rails/UnknownEnv:
 
 AllCops:
   TargetRubyVersion: 4.0
+  # This configuration should be kept in sync with `config/bootsnap.rb`
+  StringLiteralsFrozenByDefault: true
   # Auto-enable all new pending cops between releases
   NewCops: enable
   # Mostly disabling the majority of the Rails-generated configuration files
@@ -73,6 +75,9 @@ Style/Documentation:
 
 Style/EmptyMethod:
   EnforcedStyle: expanded
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
 
 Style/GlobalStdStream:
   Enabled: false

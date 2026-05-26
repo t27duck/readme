@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class UserManualEntriesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_user_manual_heading

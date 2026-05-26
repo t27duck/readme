@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class Api::V2::ReadmeController < ApplicationController
   def index # rubocop:disable Metrics/AbcSize
     @entries = Entry.order(:id)

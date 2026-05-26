@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class EntriesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_entry, only: [:show, :edit, :update, :destroy]
